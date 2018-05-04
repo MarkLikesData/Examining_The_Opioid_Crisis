@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Overdose Data</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0/slate/bootstrap.min.css">
+
+  <!-- Leaflet CSS & JS for Map-->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css">
+  <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
+  <script type="text/javascript" src="./map/leaflet-heat.js"></script>
+
+  <!--D3 cdn-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.5.0/d3.min.js"></script>
+
+  <!-- Plotly JS for Line & Pie Charts-->
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  
+
+</head>
+
+<body>
+  <div id="title" class="text-center">
+    <h1>Opioids tell a grim story. Are we listening?</h1>
+  </div>
+
+  <div id="row1" class="row">
+
+
+    <div id="map-area" class="col-md-7">
+      <div class="card">
+        <div class="card-body" style="height: 24rem">
+          <div id="map" style="height: 21rem; position: relative;" class="leaflet-container leaflet-touch leaflet-retina leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="linechart-area" class="col-md-5"  align="center">
+      <div class="card">
+        <div class="card-body" style="height: 24rem">
+          <div id="myLC" style="height: 21rem; position: relative;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </br>
+  </br>  
+  <div id="row2" class="row">
+
+
+    <div id="barchart-area" class="col-sm-7" style="height: 24rem">
+      <div class="card" align="center">
+        <div class="card-body" style="height: 24rem">
+            <div id="myBC" style="height: 21rem; position: relative;"></div>
+        </div>
+      </div>
+    </div>
+    <!-- <div id="fact-area"class="col-sm-4" style="height: 18rem">
+      <div class="card" align="center">
+        <div class="card-body" style="height: 18rem">
+          <h5 class="card-title">In 2015, opioids accounted for 63% of all lethal drug overdoses.  During that year, one individual died due to OD every 16 minutes. </h5>
+          <p class="card-text"></p>
+        </div>
+      </div>
+    </div> -->
+  <div id="piechart-area"class="col-sm-5" style="height: 24rem">
+      <div class="card" align="center">
+          <div class="card-body" style="height: 24rem">
+            <div id="myPC" style="height: 21rem; position: relative;">
+            </div>
+          </div>
+    </div>
+  </div>
+
+  <!-- JS for Map   -->
+  <!-- <script type="text/javascript" src="./map/logic3.js"></script> -->
+
+  <!-- JS for Line Chart  -->
+  <!-- <script type="text/javascript" src="./line/logic4.js"></script> -->
+
+  <!-- JS for Pie Chart -->
+  <!-- <script type="text/javascript" src="./pie/logic5.js"></script> -->
+
+  <!-- Attempt to use masterlogic.js file -->
+  <script type="text/javascript" src="masterlogic.js"></script>
+
+</body>
+</html>
